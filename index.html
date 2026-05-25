@@ -160,6 +160,21 @@
       letter-spacing: -0.065em;
       margin-bottom: 20px;
     }
+    .cover-title-row {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+    .cover-title-row h1 {
+      margin-bottom: 0;
+    }
+    .cover-qr {
+      width: clamp(100px, 14vw, 180px);
+      height: auto;
+      flex-shrink: 0;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    }
     h2 {
       font-size: clamp(2.6rem, 5.2vw, 5.6rem);
       letter-spacing: -0.055em;
@@ -425,7 +440,10 @@
       <div class="slide-card">
         <div class="slide-content">
           <div class="eyebrow">2026년 5월 · 남동지구 구반장 월례교육 특강</div>
-          <h1>설득보다 환대,<br>지적보다 동행</h1>
+          <div class="cover-title-row">
+            <h1>설득보다 환대,<br>지적보다 동행</h1>
+            <img src="qrcode.png" alt="QR 코드" class="cover-qr" />
+          </div>
           <div class="subtitle">상처받은 신자를 다시 일으키는 구반장의 말 한마디</div>
           <p class="lead">올해의 주제는 “사람의 마음과 신앙”입니다. 구반장님의 작은 안부와 말 한마디가 누군가에게는 다시 성당으로 돌아오는 길이 될 수 있습니다.</p>
           <div class="cover-info">
